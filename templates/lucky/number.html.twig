@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+       
+    </head>
+    <body>
+       <h1>Your lucky number is {{ number }}</h1>
+        <h1>Your Name is {{ name }}</h1>
+        <p>You have {{ nofification|length }} new notifications.</p>
+
+         {% for key, user in nofification %}
+        <li> {{ user }}</li>
+         {% endfor %}
+       
+    </body>
+</html>
